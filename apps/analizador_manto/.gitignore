@@ -1,8 +1,17 @@
 
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.env
+
+# Datos sensibles
 *.csv
+
+# Entornos virtuales
+env/
+venv/
+
+# VSCode
 .vscode/
+
