@@ -27,4 +27,5 @@ def consultar_reporte(pregunta):
     print(f"IA: {resultado['output']}")
 
 if __name__ == "__main__":
-    consultar_reporte("¿Cuál es el costo real acumulado total de todas las órdenes?")
+#    consultar_reporte("¿Cuál es el costo real acumulado total de todas las órdenes?")
+    consultar_reporte("¿Cuál es el costo planificado acumulado total de todas las órdenes?")
