@@ -9,7 +9,7 @@ import pandas as pd
 from langchain_ollama import OllamaLLM
 from langchain_experimental.agents import create_pandas_dataframe_agent
 
-df = pd.read_csv('IW49.csv', sep=None, engine='python', header=0)
+df = pd.read_csv('IW49UL.csv', sep=None, engine='python', header=0)
 
 llm = OllamaLLM(model="llama3.2:3b", temperature=0)
 
