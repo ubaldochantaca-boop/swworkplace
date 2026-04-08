@@ -3,3 +3,5 @@ pandas
 psutil
 langchain-experimental
 langchain-community
+langchain-ollama
+tabulate
