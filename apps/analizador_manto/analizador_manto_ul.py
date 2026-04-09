@@ -32,7 +32,7 @@ def ejecutar_agente():
     print(f"Cargando archivo: {archivo}")
     df = pd.read_csv(archivo)
 
-    llm = Ollama(model="llama3.2:3b", temperature=0)
+    llm = Ollama(model="llama3:8b", temperature=0)
 
     agent = create_pandas_dataframe_agent(
         llm,
