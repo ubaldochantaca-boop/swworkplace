@@ -1,0 +1,43 @@
+# ==========================================================
+# 1.- Nombre del programa:     Renombrador PRO
+#
+# 2.- Autor:     Ubaldo Chantaca Zeron ©ucz
+#
+# 3.- Versión:     V-1.00
+#
+# 4.- Fecha de creación:     16-Apr-2026
+#
+# 5.- Fecha de modificación:     16-Apr-2026
+#
+# 6.- Resumen de funcionalidad:
+#     Aplicación gráfica desarrollada en Python/Tkinter para
+#     renombrar archivos de forma masiva dentro de un
+#     subdirectorio seleccionado por el usuario.
+#
+#     Funciones principales:
+#     - Selección de carpeta mediante explorador Windows
+#     - Prefijo y/o sufijo configurable
+#     - Vista previa antes de ejecutar
+#     - Checkbox para elegir archivos individuales
+#     - Exclusión de carpetas y subdirectorios
+#     - Log de éxitos y errores
+#     - Panel lateral de ayuda
+#     - Nueva ejecución sin cerrar la aplicación
+#
+# 7.- Ejemplo de ejecución:
+#
+#     Carpeta seleccionada:  C:\Reportes
+#
+#     Archivos originales:
+#     ventas.xlsx
+#     clientes.txt
+#
+#     Prefijo:  REP_
+#
+#     Sufijo:   _2026
+#
+#     Resultado:
+#     REP_ventas_2026.xlsx
+#     REP_clientes_2026.txt
+#
+# ==========================================================
