@@ -1,9 +1,3 @@
-Como tu arquitecto DevOps senior, he actualizado el archivo `README.md` para que refleje la **arquitectura híbrida final**. Esta versión incluye el soporte para el binario local de FFmpeg, la lógica de rutas relativas para el modo portable y las correcciones de infraestructura (como la necesidad del archivo `requirements.txt`) que aseguraron el éxito del proyecto.
-
-Aquí tienes el contenido listo para copiar y pegar en tu nota de Obsidian o directamente en tu repositorio de GitHub:
-
----
-
 # 🎥 SegmentadorVideoDocker (Versión Híbrida Pro)
 
 Este proyecto implementa un sistema de segmentación de video de alta eficiencia diseñado para ser ejecutado tanto en entornos de **contenedores (Docker)** como de forma **standalone (Portable .exe)** en Windows. La arquitectura garantiza que el programa sea "estupida y sensualmente rápido" al evitar re-codificaciones innecesarias mediante el motor FFmpeg.
