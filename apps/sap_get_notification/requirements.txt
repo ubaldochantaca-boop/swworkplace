@@ -1,0 +1,14 @@
+# --- SAP Connectivity ---
+# El conector oficial para SAP NW RFC
+pyrfc==2.8.2
+
+# --- Environment & Configuration ---
+# Para no dejar contraseñas en el código (Seguridad de Tesis)
+python-dotenv==1.0.1
+
+# --- Data Handling ---
+# Facilita el manejo de los diccionarios que devuelve la BAPI
+pydantic==2.6.4
+
+# --- STT (Speech-To-Text) - Solo si usarás Faster-Whisper ---
+# faster-whisper==1.0.1
