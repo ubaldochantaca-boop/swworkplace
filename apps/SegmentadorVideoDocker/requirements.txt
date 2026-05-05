@@ -1,0 +1,12 @@
+# ==========================================================
+# DEPENDENCIAS DE PYTHON - SEGMENTADOR DE VIDEO
+# ==========================================================
+
+# NOTA TÉCNICA: Las librerías importadas en Programa.py (os, subprocess, 
+# logging, datetime, sys) son parte de la biblioteca estándar de Python [1].
+# Por lo tanto, no requieren instalación externa vía pip.
+
+# NOTA DE DEVOPS: 'tkinter' no se incluye aquí porque es una dependencia 
+# del sistema operativo que se gestiona directamente en el Dockerfile.
+#
+# Librerías estándar de Python (no requieren instalación extra)

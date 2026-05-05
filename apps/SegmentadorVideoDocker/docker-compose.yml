@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  segmentador:
+    build: .
+    container_name: segmentador_video_app
+    # #ucz: Update - Montaje de volúmenes para desarrollo y persistencia [5, 15]
+    volumes:
+      - ./src:/app        # Sincroniza código en tiempo real
+      - ./output:/app/output # Mantiene los videos en tu disco D:
+    environment:
+      # #ucz: Update - Sustituimos la GUI de Programa.py por variables de entorno [16]
+      - VIDEO_INPUT=video_prueba.mp4
+      - SEGMENT_TIME=300
+      - LOGFILE=/app/output/LOG.txt
+    # Mapeo de red transparente (opcional) [17]
+    ports:
+      - "3000:3000"

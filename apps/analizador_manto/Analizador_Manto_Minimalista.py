@@ -11,7 +11,7 @@ from langchain_experimental.agents import create_pandas_dataframe_agent
 
 df = pd.read_csv('IW49UL.csv', sep=None, engine='python', header=0)
 
-llm = OllamaLLM(model="llama3.2:3b", temperature=0)
+llm = OllamaLLM(model="llama3:8b", temperature=0)
 
 agent = create_pandas_dataframe_agent(
     llm,
@@ -27,5 +27,7 @@ def consultar_reporte(pregunta):
     print(f"IA: {resultado['output']}")
 
 if __name__ == "__main__":
-#    consultar_reporte("¿Cuál es el costo real acumulado total de todas las órdenes?")
-    consultar_reporte("¿Cuál es el costo planificado acumulado total de todas las órdenes?")
+    consultar_reporte("¿Cuál es el costo real acumulado total de todas las órdenes?")
+#    consultar_reporte("¿Cuál es el costo planificado acumulado total de todas las órdenes?")
+#    consultar_reporte("Listame el numero de orden que tiene monto planeado, enlista solo el numero de orden y el monto planeado")
+#    consultar_reporte("Listame el numero de orden que tiene monto real diferente de cero, enlista solo el numero de orden y el monto real")

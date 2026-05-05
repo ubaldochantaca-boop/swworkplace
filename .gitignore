@@ -1,0 +1,61 @@
+# =====================================
+# MONOREPO PYTHON APPS
+# =====================================
+
+# ---------- Entornos virtuales ----------
+.venv/
+venv/
+**/.venv/
+**/venv/
+
+# ---------- Build / Deploy ----------
+build/
+dist/
+**/build/
+**/dist/
+
+# ---------- Python cache ----------
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# ---------- Logs ----------
+*.log
+
+# ---------- PyInstaller ----------
+*.spec
+
+# ---------- Ejecutables ----------
+*.exe
+*.dll
+
+# ---------- Multimedia ----------
+*.mp4
+*.avi
+*.mkv
+
+# ---------- Comprimidos ----------
+*.zip
+*.7z
+*.rar
+
+# ---------- FFmpeg ----------
+ffmpeg.exe
+ffprobe.exe
+
+# ---------- VSCode ----------
+.vscode/
+
+# ---------- Sistema Operativo ----------
+Thumbs.db
+.DS_Store
+
+# ------- Respaldos y temporales --------
+*.csv
+*.bak
+*.tmp
+
+# ----------office temporales ----------
+~$*.docx
+~$*.xlsx

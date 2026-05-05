@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro Diario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="config.js"></script>
+    <script src="app.js" defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<h2>Registro Actividad</h2>
+
+<label>Bloque</label>
+<select id="bloque"></select>
+
+<label>Tema Plan</label>
+<select id="temaP"></select>
+
+<label>Subtema Plan</label>
+<select id="subtemaP"></select>
+
+<label>Actividad Plan</label>
+<select id="actividadP"></select>
+
+<label>Prioridad</label>
+<select id="prioridad"></select>
+
+<label>Regla de Oro</label>
+<select id="regla"></select>
+
+<hr>
+
+<h3>Registro Real</h3>
+
+<input id="temaR" placeholder="Tema Real">
+<input id="subtemaR" placeholder="Subtema Real">
+<input id="actividadR" placeholder="Actividad Real">
+
+<button onclick="guardar()">Guardar</button>
+
+<p id="status"></p>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+2026-04-21 21:50:02,731 - FFmpeg detectado con éxito
+2026-04-21 23:09:19,790 - INFO - Inicio del proceso de segmentación.
+2026-04-21 23:09:20,190 - INFO - Motor FFmpeg validado en ruta: ffmpeg
+2026-04-21 23:09:20,192 - INFO - Ejecutando comando FFmpeg: ffmpeg -i video_prueba.mp4 -c copy -map 0 -segment_time 300 -f segment output/('video_prueba', '.mp4')_part%03d.mp4
+2026-04-21 23:09:21,187 - INFO - Segmentación completada. Archivos generados: 0
