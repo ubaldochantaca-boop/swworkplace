@@ -25,7 +25,7 @@ public class VoskService {
             
             // LA CORRECCIÓN ESTÁ AQUÍ:
             // Solo pasamos el Stream. NO pasamos el entero con la longitud.
-            if (recognizer.acceptWaveform(new ByteArrayInputStream(audioData))) {
+            if (recognizer.acceptWaveForm(audioData, audioData.length)) {
                 return recognizer.getResult();
             } else {
                 return recognizer.getPartialResult();
