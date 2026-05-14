@@ -1,61 +1,69 @@
-# =====================================
-# MONOREPO PYTHON APPS
-# =====================================
+# =================================================================
+# MONOREPO SWWORKPLACE - CONFIGURACIÓN PROFESIONAL
+# =================================================================
 
-# ---------- Entornos virtuales ----------
+# ---------- IDENTIDAD DEL SERVIDOR (No rastrear backups de emergencia) ----------
+.git_corrupto/
+06_Archive/
+
+# ---------- ENTORNOS DE EJECUCIÓN (Delegar a 05_Runtime) ----------
 .venv/
 venv/
-**/.venv/
 **/venv/
+**/env/
+node_modules/
+.ipynb_checkpoints/
 
-# ---------- Build / Deploy ----------
-build/
+# ---------- ARTEFACTOS DE IA Y HARDWARE (Protección RTX 5070) ----------
+# No subir pesos de modelos ni datasets que deben ir en 03_Data_Lake o 04_Models
+*.pth
+*.onnx
+*.bin
+*.model
+*.weights
+**/datasets/
+**/outputs/
+
+# ---------- BACKEND (Java / Spring Boot / Maven) ----------
+target/
+**/target/
+*.jar
+*.war
+*.ear
+.mvn/
+.factorypath
+
+# ---------- FRONTEND (Angular / Node) ----------
 dist/
-**/build/
 **/dist/
+.angular/
+npm-debug.log*
 
-# ---------- Python cache ----------
+# ---------- PYTHON CACHE & BUILD ----------
 __pycache__/
 **/__pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+build/
+**/build/
 
-# ---------- Logs ----------
-*.log
-
-# ---------- PyInstaller ----------
-*.spec
-
-# ---------- Ejecutables ----------
-*.exe
-*.dll
-
-# ---------- Multimedia ----------
+# ---------- ARCHIVOS DE SISTEMA Y MULTIMEDIA ----------
+.DS_Store
+Thumbs.db
+*.mp3
+*.wav
 *.mp4
 *.avi
-*.mkv
 
-# ---------- Comprimidos ----------
-*.zip
-*.7z
-*.rar
+# ---------- SECRETOS Y CONFIGURACIÓN LOCAL (Security by Design) ----------
+.env
+.env.*
+!.env.example
+secrets.yml
+*.pem
+*.key
 
-# ---------- FFmpeg ----------
-ffmpeg.exe
-ffprobe.exe
-
-# ---------- VSCode ----------
-.vscode/
-
-# ---------- Sistema Operativo ----------
-Thumbs.db
-.DS_Store
-
-# ------- Respaldos y temporales --------
-*.csv
-*.bak
-*.tmp
-
-# ----------office temporales ----------
-~$*.docx
-~$*.xlsx
+# ---------- DOCUMENTACIÓN Y DISEÑO (IEEE 830) ----------
+# Permitir solo Markdown para documentación técnica
+!*.md

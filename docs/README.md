@@ -1,1 +1,0 @@
-# documentación global (opcional)
