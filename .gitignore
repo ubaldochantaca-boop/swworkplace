@@ -33,6 +33,26 @@ target/
 .mvn/
 .factorypath
 
+# Archivos generados por compilación Java
+*.class
+
+# Logs de ejecución Spring Boot
+logs/
+*.log
+
+# Bases de datos embebidas (H2 / SQLite)
+*.db
+*.mv.db
+*.trace.db
+
+# ---------- IDEs (Configuración local de desarrollador) ----------
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
 # ---------- FRONTEND (Angular / Node) ----------
 dist/
 **/dist/
@@ -63,6 +83,15 @@ Thumbs.db
 secrets.yml
 *.pem
 *.key
+*.p12
+*.jks
+
+# ---------- CONFIGURACIÓN LOCAL SPRING ----------
+# Archivos de configuración locales que pueden contener credenciales
+application-local.properties
+application-local.yml
+application-dev.properties
+application-dev.yml
 
 # ---------- DOCUMENTACIÓN Y DISEÑO (IEEE 830) ----------
 # Permitir solo Markdown para documentación técnica
