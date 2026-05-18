@@ -1,0 +1,94 @@
+# =====================================================================
+# ERP-ECOSYSTEM: .gitignore GLOBAL (Ubuntu Server & Nvidia 5070)
+# =====================================================================
+
+# ---------- 1. CONFIGURACIÓN ORIGINAL (Preservada) ----------
+.venv/
+venv/
+**/.venv/
+**/venv/
+build/
+dist/
+**/build/
+**/dist/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.log
+*.spec
+*.exe
+*.dll
+*.mp4
+*.avi
+*.mkv
+*.zip
+*.7z
+*.rar
+ffmpeg.exe
+ffprobe.exe
+.vscode/
+Thumbs.db
+.DS_Store
+*.csv
+*.bak
+*.tmp
+~$*.docx
+~$*.xlsx
+
+# ---------- 2. COMPLEMENTO: Java / Spring Boot (Backend) ----------
+# Ignorar binarios compilados y empaquetados locales de Maven
+**/target/
+**/temp-jar/
+*.jar
+*.war
+*.ear
+*.class
+
+# Archivos de configuración de herramientas de desarrollo Java
+.factorypath
+.classpath
+.project
+.settings/
+.sts4-cache/
+**/mvnw.cmd
+**/.mvnu/
+
+# ---------- 3. COMPLEMENTO: NodeJS / Flutter (Frontend actual/futuro) ----------
+# Ignorar dependencias locales instaladas (¡Pesan cientos de MB!)
+**/node_modules/
+**/.pnpm-store/
+.eslintcache
+.stylelintcache
+
+# Archivos de empaquetado de Flutter e iOS/Android locales
+**/.dart_tool/
+**/.packages
+**/.pub-cache/
+**/android/.gradle/
+**/android/local.properties
+**/ios/Pods/
+
+# ---------- 4. COMPLEMENTO: Modelos de IA e Inferencias (Nvidia 5070) ----------
+# Ignorar los pesos binarios de Vosk y archivos de tensores pesados
+**/model-es/
+**/models/
+*.bin
+*.onnx
+*.pt
+*.engine
+*.gguf
+
+# ---------- 5. COMPLEMENTO: Multimedia de Audio (Mantenimiento Voice) ----------
+# Archivos de voz temporales generados en las pruebas de ingesta
+*.wav
+*.mp3
+*.m4a
+*.pcm
+
+# ---------- 6. COMPLEMENTO: Seguridad y Entornos Locales ----------
+# Archivos que contienen contraseñas o datos de conexión a SAP/Postgres
+.env
+*.env.local
+.postman/
+*.globals.yaml

@@ -12,7 +12,11 @@ venv/
 **/venv/
 **/env/
 node_modules/
+**/node_modules/
 .ipynb_checkpoints/
+.pnpm-store/
+.eslintcache
+.stylelintcache
 
 # ---------- ARTEFACTOS DE IA Y HARDWARE (Protección RTX 5070) ----------
 # No subir pesos de modelos ni datasets que deben ir en 03_Data_Lake o 04_Models
@@ -21,78 +25,75 @@ node_modules/
 *.bin
 *.model
 *.weights
+*.pt
+*.engine
+*.gguf
 **/datasets/
 **/outputs/
+**/model-es/
+**/models/
 
 # ---------- BACKEND (Java / Spring Boot / Maven) ----------
 target/
 **/target/
+**/temp-jar/
 *.jar
 *.war
 *.ear
 .mvn/
 .factorypath
-
-# Archivos generados por compilación Java
 *.class
-
-# Logs de ejecución Spring Boot
 logs/
 *.log
+
+# Archivos específicos de entornos de desarrollo Java
+.classpath
+.project
+.settings/
+.sts4-cache/
 
 # Bases de datos embebidas (H2 / SQLite)
 *.db
 *.mv.db
-*.trace.db
 
-# ---------- IDEs (Configuración local de desarrollador) ----------
-.idea/
-*.iml
-.vscode/
-.project
-.classpath
-.settings/
+# ---------- COMPLEMENTO: Flutter / Dart (Futuro Frontend Móvil) ----------
+**/android/.gradle/
+**/android/local.properties
+**/android/app/protobuf
+**/ios/Pods/
+**/.dart_tool/
+**/.packages
+**/.pub-cache/
 
-# ---------- FRONTEND (Angular / Node) ----------
+# ---------- COMPLEMENTO: Multimedia de Audio (Mantenimiento Voice) ----------
+# Archivos de voz temporales generados en las pruebas de ingesta en el servidor
+*.wav
+*.mp3
+*.m4a
+*.pcm
+
+# ---------- COMPLEMENTO: Seguridad y Datos Locales (Fase SAP / SAT) ----------
+# Credenciales y secretos locales que no deben subir a GitHub
+.env
+*.env.local
+.postman/
+*.globals.yaml
+
+# ---------- COMPLEMENTO: Archivos del Sistema y Temporales ----------
+build/
 dist/
+**/build/
 **/dist/
-.angular/
-npm-debug.log*
-
-# ---------- PYTHON CACHE & BUILD ----------
 __pycache__/
 **/__pycache__/
-*.py[cod]
-*$py.class
-*.so
-build/
-**/build/
-
-# ---------- ARCHIVOS DE SISTEMA Y MULTIMEDIA ----------
-.DS_Store
+*.pyc
+*.pyo
+*.spec
+*.exe
+*.dll
 Thumbs.db
-*.mp3
-*.wav
-*.mp4
-*.avi
-
-# ---------- SECRETOS Y CONFIGURACIÓN LOCAL (Security by Design) ----------
-.env
-.env.*
-!.env.example
-secrets.yml
-*.pem
-*.key
-*.p12
-*.jks
-
-# ---------- CONFIGURACIÓN LOCAL SPRING ----------
-# Archivos de configuración locales que pueden contener credenciales
-application-local.properties
-application-local.yml
-application-dev.properties
-application-dev.yml
-
-# ---------- DOCUMENTACIÓN Y DISEÑO (IEEE 830) ----------
-# Permitir solo Markdown para documentación técnica
-!*.md
+.DS_Store
+*.bak
+*.tmp
+~$*.docx
+~$*.xlsx
