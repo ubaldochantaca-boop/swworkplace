@@ -1,5 +1,5 @@
 # =================================================================
-# MONOREPO SWWORKPLACE - CONFIGURACIÓN PROFESIONAL
+# MONOREPO SWWORKPLACE - CONFIGURACIÓN PROFESIONAL GENERAL
 # =================================================================
 
 # ---------- IDENTIDAD DEL SERVIDOR (No rastrear backups de emergencia) ----------
@@ -40,21 +40,35 @@ target/
 *.jar
 *.war
 *.ear
-.mvn/
+# CORRECCIÓN: No ignorar la carpeta completa .mvn/ para permitir el uso de Maven Wrapper (.mvnw)
+# Solo ignoramos los archivos de extensión temporal internos de Maven, manteniendo el wrapper intacto.
+.mvn/wrapper/maven-wrapper.jar
 .factorypath
 *.class
 logs/
 *.log
 
-# Archivos específicos de entornos de desarrollo Java
+# Archivos específicos de entornos de desarrollo Java e IDEs (ADICIÓN DE SEGURIDAD)
 .classpath
 .project
 .settings/
 .sts4-cache/
+.idea/
+*.iml
+*.iws
+.vscode/
+*.code-workspace
+.nbworkspace/
+.nb-gradle/
 
 # Bases de datos embebidas (H2 / SQLite)
 *.db
 *.mv.db
+
+# ---------- ADICIÓN: CONTENEDORES Y DOCKER ----------
+.docker/
+*docker-compose.override.yml
+*.devcontainer/
 
 # ---------- COMPLEMENTO: Flutter / Dart (Futuro Frontend Móvil) ----------
 **/android/.gradle/
