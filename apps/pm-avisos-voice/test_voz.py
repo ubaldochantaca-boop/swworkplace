@@ -5,7 +5,8 @@ import os
 
 def test_mantenimiento_voz():
     # Asegúrate de usar el archivo que pasaste por FFmpeg
-    audio_file = "aviso_prueba_final.wav" 
+    audio_file = "aviso_prueba.wav"
+    #audio_file = "aviso_prueba_final.wav" 
     url = "ws://localhost:8080/audio-stream"
 
     if not os.path.exists(audio_file):
