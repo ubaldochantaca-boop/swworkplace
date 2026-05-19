@@ -1,6 +1,7 @@
 package com.codewithmosh.store;
 
-import org.apache.catalina.core.ApplicationContext;
+import org.springframework.context.ApplicationContext;
+// import org.apache.catalina.core.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
