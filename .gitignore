@@ -61,8 +61,10 @@ logs/
 .nbworkspace/
 .nb-gradle/
 
-# Bases de datos embebidas (H2 / SQLite)
+# --- MODIFICACIÓN DE SEGURIDAD: COBERTURA TOTAL SQLITE Y METADATOS ---
 *.db
+*.db-wal
+*.db-shm
 *.mv.db
 
 # ---------- ADICIÓN: CONTENEDORES Y DOCKER ----------
@@ -93,6 +95,15 @@ logs/
 .postman/
 *.globals.yaml
 
+# --- NUEVO: PROTECCIÓN PERIMETRAL CONTABLE (EVITAR FUGAS DE DATOS PII) ---
+**/uploads/
+**/uploads/*
+*.pdf
+*.PDF
+*.csv
+*.xlsx
+*.xls
+
 # ---------- COMPLEMENTO: Archivos del Sistema y Temporales ----------
 build/
 dist/
@@ -111,3 +122,4 @@ Thumbs.db
 *.tmp
 ~$*.docx
 ~$*.xlsx
+apps/AnalizadorContable/uploads/
